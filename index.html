@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽签</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">抽签</h1>
+        <button id="drawButton" class="draw-button">抽签</button>
+        
+        <div id="resultContainer" class="result-container hidden">
+            <div class="fortune-paper">
+                <div class="fortune-level" id="fortuneLevel"></div>
+                <div class="fortune-content" id="fortuneContent"></div>
+                <div class="fortune-advice" id="fortuneAdvice"></div>
+            </div>
+            <button id="drawAgainButton" class="draw-again-button">再抽一次</button>
+        </div>
+    </div>
+
+    <script src="fortune_data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
